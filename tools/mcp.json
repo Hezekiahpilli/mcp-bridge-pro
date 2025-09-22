@@ -1,13 +1,9 @@
 {
   "mcpServers": {
     "bridge-server": {
-      "command": "uv",
+      "command": "python",
       "args": [
-        "--directory",
-        "ABSOLUTE/PATH/TO/mcp-bridge-pro/python_server",
-        "run",
-        "python",
-        "server.py"
+        "C:/mcp-bridge-pro/python_server/server.py"
       ]
     }
   }

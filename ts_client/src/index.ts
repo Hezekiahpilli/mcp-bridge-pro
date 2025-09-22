@@ -2,8 +2,8 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
 
-const CMD = process.env.MCP_CMD || "uv";
-const ARGS = (process.env.MCP_ARGS || "--directory ./python_server run python server.py").split(" ");
+const CMD = process.env.MCP_CMD || "python";
+const ARGS = (process.env.MCP_ARGS || "python_server/server.py").split(" ");
 
 async function main() {
   const transport = new StdioClientTransport({ command: CMD, args: ARGS });
